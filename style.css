@@ -1,0 +1,172 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+
+
+.logo {
+    width: 15%;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.nav-font {
+    font-size: large;
+}
+.sticky-top{
+    /* height: 80px; */
+}
+.nav-font li a:hover {
+    background: transparent;
+    color: #03f;
+    /* border-bottom: 2px solid #03f; */
+}
+.btuun{
+    color:  blue;
+    background-color: rgb(255, 255, 255);
+    border: solid #03f;
+    
+    
+    
+}
+.btuun:hover{
+    color: rgb(244, 244, 248);
+    border: solid #03f;
+    background-color: #03f ;
+    
+}
+
+.btun{
+    color: white;
+    background-color: #03f;
+    border: none;
+    padding: 8px;
+    
+}
+.btun:hover{
+    color: #03f;
+    border: solid #03f;
+    background-color: rgb(255, 255, 255);
+    padding: none !important;
+    margin: none !important;
+}
+
+
+
+/* section  */
+
+.text-h1 {
+    font-size: 58px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    margin-bottom: 2.2rem;
+    line-height: 1.16;
+}
+
+
+/* section accordian  */
+
+
+#tempaltemo_accordian ul.accordian-link-list li{
+    padding-top: 20px;
+    font-weight: lighter;
+    font-size: small;
+}
+#tempaltemo_accordian ul.accordian-link-list li a{
+    color: black;
+    font-size: 12px !important;
+    /* font-weight:100 !important; */
+
+}
+#tempaltemo_accordian ul.accordian-link-list li a:hover{
+   color: rgb(85, 106, 225);
+
+}
+
+.accordion{
+    --bs-accordion-border-color:none !important;
+}
+
+.accordion-button:focus{
+      border-color: none !important;
+      box-shadow: none !important;
+}
+
+
+
+.accordion-button:not(.collapsed){
+    color: black!important;
+    background-color: #fff !important;
+}
+
+
+
+
+/* section cards*/
+.card-img{
+    position: relative;
+  width: 50%;
+}
+.img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .card-img:hover .image{
+    opacity: 0.3;
+  }
+  
+  .card-img .middle {
+    opacity: 1;
+  }
+  
+ 
+
+
+/* footer  */
+
+#tempaltemo_footer ul.footer-link-list li{
+    padding-top: 30px;
+    font-size: 0.11111rem;
+    font-weight: lighter;
+}
+#tempaltemo_footer ul.footer-link-list li a{
+    color: black;
+    font-size: 15px !important;
+    font-weight:100 !important;
+
+}
+#tempaltemo_footer ul.footer-link-list li a:hover{
+   color: rgb(85, 106, 225);
+
+}
+
+/* footer last */
+#tempaltemo_footer ul.footer-link-lists li{
+    padding: 10px;
+    font-size: 0.11111rem;
+    font-weight: lighter;
+}
+#tempaltemo_footer ul.footer-link-lists li a{
+    color: black;
+    font-size: 15px !important;
+    font-weight:100 !important;
+
+}
+#tempaltemo_footer ul.footer-link-lists li a:hover{
+   color: rgb(85, 106, 225);
+
+}
