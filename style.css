@@ -2,11 +2,7 @@
 
 
 
-.logo {
-    width: 15%;
-    margin-right: 2px;
-    cursor: pointer;
-}
+/*  */
 
 .nav-font {
     font-size: large;
@@ -19,37 +15,32 @@
     color: #03f;
     /* border-bottom: 2px solid #03f; */
 }
-.btuun{
-    color:  blue;
-    background-color: rgb(255, 255, 255);
-    border: solid #03f;
-    
-    
-    
-}
-.btuun:hover{
-    color: rgb(244, 244, 248);
-    border: solid #03f;
-    background-color: #03f ;
-    
-}
 
-.btun{
-    color: white;
-    background-color: #03f;
-    border: none;
-    padding: 8px;
-    
-}
-.btun:hover{
-    color: #03f;
-    border: solid #03f;
-    background-color: rgb(255, 255, 255);
-    padding: none !important;
-    margin: none !important;
-}
-
-
+.log-in {
+    font-weight: 600;
+    color: #03f !important;
+    border-color: #03f !important;
+  }
+  
+.buy-now{
+    background-color: #03f !important;
+    color: white !important;
+    border-color: #03f !important;
+    font-weight: 600 !important;
+  }
+  
+.buy-now:hover {
+    color: #03f !important;
+    background-color: white !important;
+    border-color: #03f !important   ;
+  }
+  
+.btn-outline-primary:hover {
+    color: white !important;
+    background-color: #03f !important;
+    border-color: #03f !important;
+  }
+ 
 
 /* section  */
 
@@ -63,7 +54,19 @@
 
 
 /* section accordian  */
-
+.list li, .list a {
+    text-decoration: none;
+    font-size: 0.82222rem;
+    font-weight: 300;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+}
+.info {
+    font-size: 18px;
+    font-weight: 300;
+  }
 
 #tempaltemo_accordian ul.accordian-link-list li{
     padding-top: 20px;
@@ -101,11 +104,11 @@
 
 
 /* section cards*/
-.card-img{
+/* .card-img{
     position: relative;
   width: 50%;
-}
-.img{
+} */
+/* .img{
     opacity: 1;
     display: block;
     width: 100%;
@@ -127,15 +130,51 @@
   
   .card-img:hover .image{
     opacity: 0.3;
+    
   }
   
-  .card-img .middle {
+.card-body .card-img .middle {
     opacity: 1;
+  } */
+
+
+
+
+
+/* card img effect  */
+.card-head {
+    position: relative;
   }
   
+  .card-hover-effect {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    top: 0;
+    font-weight: 600;
+    color: #fff;
+    display: none;
+  }
+  
+  .card-head:hover .card-hover-effect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* card last text  */
+.card-body .view-template {
+    font-size: 0.77667rem;
+    font-weight: 600;
+    display: flex;
+    cursor: pointer;
+}
+.view-template:hover {
+    color: #03f;
+    
+  }
  
-
-
 /* footer  */
 
 #tempaltemo_footer ul.footer-link-list li{
@@ -170,3 +209,4 @@
    color: rgb(85, 106, 225);
 
 }
+

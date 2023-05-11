@@ -15,10 +15,13 @@
 
 
   <!-- navbar -->
-  <section class="sticky-top bg-light"> 
+  <section class="sticky-top bg-light">
     <nav class="navbar navbar-expand-lg ">
-      <div class="container my-2">
-        <img src="asests/images/unbounce-icon-dark.svg" alt="logo" srcset="" class="logo">
+      <div class="container-xl container-fluid my-2">
+        <a href="index.html">
+          <img src="asests/images/unbounce-icon-dark.svg" alt="logo" srcset="" width="160" height="32"
+            class="img-fluid">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -77,12 +80,15 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
-          <div class="d-flex gap-2">
-            <!-- <i class="bi bi-search"></i> -->
-            <button class="btuun ">Log In</button>
-            <button class="btun">Start for free trail</button>
-
+          <div class="d-grid d-lg-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <i class="bi bi-search d-none d-lg-block me-3 text-black fs-6 bii-search"></i>
+            <button class="btn btn-outline-primary rounded-0 border-2 log-in order-1 order-lg-0" type="button">Log
+              in</button>
+            <button class="btn btn-primary rounded-0 border-2 buy-now " type="button">Start My
+              Free
+              Trial</button>
           </div>
+
         </div>
       </div>
     </nav>
@@ -122,83 +128,95 @@
   <!-- cards section -->
 
 
-
-  <div class="container">
+  <section class="container-xl container bg-white">
     <div class="row">
-      <div class="col-lg-3 py-5">
-        <div class="sticky-top border-start border-1" style="z-index: auto; top: 15%; overflow: auto; height: 480px;">
-        <div class="accordion" style="border-left:1px !important;" id="accordionExample">
-          <div class="pt-5 " id="tempaltemo_accordian">
-            <h5 class="h5 ms-4">BY TOOL</h5>
-            <ul class=" accordian-link-list ms-3">
-              <li><a class="text-decoration-none" href="#">ALL</a></li>
-              <li><a class="text-decoration-none" href="#">FEATURED</a></li>
-              <li><a class="text-decoration-none" href="#">LANDING PAGE</a></li>
-              <li><a class="text-decoration-none" href="#">POPUPS</a></li>
-              <li><a class="text-decoration-none" href="#">STICKY BAR</a></li>
-            </ul>
-          </div>
-          <div class="accordion-item" style="border: none !important;">
-            <h2 class="accordion-header" style="border: none !important;" id="headingOne">
-              <button class="accordion-button h1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                BY CAMPAIGN
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-              <div class="" id="tempaltemo_accordian">
-                <ul class=" accordian-link-list">
-                  <li><a class="text-decoration-none" href="#">ALL</a></li>
-                  <li><a class="text-decoration-none" href="#">FEATURED</a></li>
-                  <li><a class="text-decoration-none" href="#">LANDING PAGE</a></li>
-                  <li><a class="text-decoration-none" href="#">POPUPS</a></li>
-                  <li><a class="text-decoration-none" href="#">STICKY BAR</a></li>
-                </ul>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class="accordion-item" style="border: none !important;">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                BY TYPE
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="" id="tempaltemo_accordian">
-                  <ul class=" accordian-link-list">
-                    <li><a class="text-decoration-none" href="#">ALL</a></li>
-                    <li><a class="text-decoration-none" href="#">FEATURED</a></li>
-                    <li><a class="text-decoration-none" href="#">LANDING PAGE</a></li>
-                    <li><a class="text-decoration-none" href="#">POPUPS</a></li>
-                    <li><a class="text-decoration-none" href="#">STICKY BAR</a></li>
+      <div class="py-5 col-md-3 d-none d-md-block sticky-section">
+
+        <div class="sticky-top" style="z-index: auto; top: 20%; overflow: auto; height: 430px;">
+          <h6>BY TOOL</h6>
+          <ul class="list">
+            <li class="pt-3">
+              <a href="#">All</a>
+            </li>
+            <li>
+              <a href="#">Featured</a>
+            </li>
+            <li>
+              <a href="#">Landing Pages</a>
+            </li>
+            <li>
+              <a href="#">Popups</a>
+            </li>
+            <li>
+              <a href="#">Stickk Bars</a>
+            </li>
+          </ul>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h6 class="accordion-header">
+                <button class="accordion-button ps-0 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#sticky-section_1" aria-expanded="false" aria-controls="sticky-section_1">
+                  BY CAMPAIGN
+                </button>
+              </h6>
+              <div id="sticky-section_1" class="accordion-collapse collapse" style="">
+                <div class="accordion-body">
+                  <ul class="list">
+                    <li>Lead Generation</li>
+                    <li>Events</li>
+                    <li>Sales Pages</li>
+                    <li>Products</li>
+                    <li>Books</li>
+                    <li>Coming Soon</li>
+                    <li>Click-Through</li>
+                    <li>Ebook</li>
+                    <li>Webinar</li>
+                    <li>Ecourse</li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item" style="border: none !important;">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                SPECIAL FEATURES
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="" id="tempaltemo_accordian">
-                  <ul class=" accordian-link-list">
-                    <li><a class="text-decoration-none" href="#">ALL</a></li>
-                    <li><a class="text-decoration-none" href="#">FEATURED</a></li>
-                    <li><a class="text-decoration-none" href="#">LANDING PAGE</a></li>
-                    <li><a class="text-decoration-none" href="#">POPUPS</a></li>
-                    <li><a class="text-decoration-none" href="#">STICKY BAR</a></li>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#sticky-section_2" aria-expanded="false" aria-controls="sticky-section_2">
+                  BY TYPE
+                </button>
+              </h2>
+              <div id="sticky-section_2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul class="list">
+                    <li>Agency Lead Generation</li>
+                    <li>Agency</li>
+                    <li>SaaS</li>
+                    <li>Ecommerce</li>
+                    <li>Minnmalist</li>
+                    <li>Real Estate</li>
+                    <li>Mobile Apps</li>
+                    <li>Travel</li>
+                    <li>WordPress</li>
+                    <li>Consulting</li>
+                    <li>Education</li>
+                    <li>Fashion</li>
+                    <li>Health</li>
+                    <li>Restaurant</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#sticky-section_3" aria-expanded="false" aria-controls="sticky-section_3">
+                  SPECIAL FEATURES
+                </button>
+              </h2>
+              <div id="sticky-section_3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul class="list">
+                    <li>Parallax Effect</li>
+                    <li>Video Backgrounds</li>
+                    <li>LightBoxes</li>
                   </ul>
                 </div>
               </div>
@@ -206,14 +224,48 @@
           </div>
         </div>
       </div>
-      </div>
-      
+
 
       <!-- content card img  -->
 
 
 
-
+      <div class="col-9 mx-auto my-5 d-md-none">
+        <select class="form-select" aria-label="Default select example">
+          <option selected="">PRODUCTS</option>
+          <option>All</option>
+          <option>AGENCY LEAD GENERATION</option>
+          <option>LEAD GENERATION</option>
+          <option>AGENCY</option>
+          <option>PARALLAX EFFECT</option>
+          <option>EVENTS</option>
+          <option>SAAS</option>
+          <option>VIDEO BACKGROUNDS</option>
+          <option>LIGHTBOXES</option>
+          <option>SALES PAGES</option>
+          <option>ECOMMERCEE</option>
+          <option>PRODUCTS</option>
+          <option>MINIMALIST</option>
+          <option>LANDING PAGES</option>
+          <option>REEL ESTATE</option>
+          <option>POPUPS</option>
+          <option>MOBILE APPS </option>
+          <option>COMING SOON</option>
+          <option>CLICK-THROUGH</option>
+          <option>TRAVEL</option>
+          <option>WORDPRESS</option>
+          <option>EBOOK</option>
+          <option>WEBINAR</option>
+          <option>CONSULTING</option>
+          <option>ECOURSE</option>
+          <option>EDUCATION</option>
+          <option>FASHION</option>
+          <option>HEALTH</option>
+          <option>HEALTH</option>
+          <option>STICKY BARS</option>
+          <option>RESTAURANT</option>
+        </select>
+      </div>
 
       <div class="py-5 col-lg-9">
 
@@ -226,262 +278,313 @@
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/O-Saas-272x253.jpg" alt="" srcset="" class="image">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/O-Saas-272x253.jpg" class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body ">
                 <h5 class="card-text fw-light">O-SASS</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="#" class="text-decoration-none"> <i class="bi bi-arrow-right me-2"></i>VIEW THIS TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
+
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/O-Book--272x253.jpg" alt="" srcset="" class="image">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/O-Book--272x253.jpg" class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">O-Book</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/O-Soon-272x253.jpg" alt="" srcset="" class="image">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card  rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/O-Soon-272x253.jpg" class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">O-Coming Soon</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/Thumbnail-1-272x254.jpg" alt="" srcset="" class="image">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/Thumbnail-1-272x254.jpg" class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Freshgoods</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/O-Product-Launch-272x253.jpg" alt="" srcset="" class="image">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/O-Product-Launch-272x253.jpg" class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
 
               <div class="card-body">
                 <h5 class="card-text fw-light">Getting-Product Launch</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/unbounce-template-thumbnail-produkto-272x253-lores-272x253.jpg" class="image"
-                alt="" srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/unbounce-template-thumbnail-produkto-272x253-lores-272x253.jpg"
+                  class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Produkto</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/unbounce-template-thumbnail-flora-272x253-lores-272x253.jpg" class="image" alt=""
-                srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/unbounce-template-thumbnail-flora-272x253-lores-272x253.jpg"
+                  class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Flora</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/unbounce-template-thumbnail-coser-272x253-lores-272x253.jpg" class="image" alt=""
-                srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/unbounce-template-thumbnail-coser-272x253-lores-272x253.jpg"
+                  class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Coser</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/Product-Announcement--272x253.jpg" class="image" alt="" srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/Product-Announcement--272x253.jpg" class="card-img-top rounded-0"
+                  alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Product Announcement</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/Beta-Signup--272x253.jpg" alt="" class="image" srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/Beta-Signup--272x253.jpg" class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Beta Signup</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/Trending-Content--272x253.jpg" alt="" class="image" srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/Trending-Content--272x253.jpg" class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Trending Content</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/Harbor-272x254.jpg" alt="" class="image" srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/Harbor-272x254.jpg" class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Harbor (Business Services)</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/unbounce-template-thumbnail-moss-272x253-lores-272x253.jpg" class="image" alt=""
-                srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/unbounce-template-thumbnail-moss-272x253-lores-272x253.jpg"
+                  class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Moss</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/Coser-Lightbox-Thumbnail-final-272x253.png" class="image" alt="" srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/Coser-Lightbox-Thumbnail-final-272x253.png" class="card-img-top rounded-0"
+                  alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Coser (Lightbox)</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
 
 
           <div class="col">
-            <div class="card shadow-sm card-img">
-              <img src="asests/images/unbounce-template-thumbnail-nt_next-272x253-lores-272x253.jpg" class="image"
-                alt="" srcset="">
-              <div class="middle">
-
-                <!-- <div class="text">John Doe</div> -->
+            <div class="card rounded-0 h-100">
+              <div class="card-head">
+                <img src="asests/images/unbounce-template-thumbnail-nt_next-272x253-lores-272x253.jpg"
+                  class="card-img-top rounded-0" alt="item image">
+                <div class="card-hover-effect">
+                  <h6>LANDING PAGE TEMPLATE</h6>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-text fw-light">Next</h5>
                 <p class="text-muted py-4">A theme that’s designed to show off your SaaS product. There’s plenty of
                   contrast, space for key benefits, a pricing grid, and more.</p>
-                <a href="" class="text-decoration-none  "> <i class="bi bi-arrow-right me-2"></i>VIEW THIS
-                  TEMPLATE</a>
+                <small class="view-template">
+                  <i class="bi bi-arrow-right pe-3"></i>
+                  <span> VIEW THIS TEMPLATE</span>
+                </small>
               </div>
             </div>
           </div>
@@ -496,11 +599,11 @@
 
 
 
-  </div>
-  </div>
+    </div>
 
 
 
+  </section>
 
   <!-- footer  -->
 
@@ -592,7 +695,8 @@
 
     </div>
     <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top align-items-center">
         <div class="col-md-4 d-flex align-items-center">
 
           <span class="mb-3 mb-md-0 text-muted ms-4">© 2010-2023 Unbounce. All rights reserved.
@@ -603,10 +707,7 @@
           <li><a class="text-decoration-none" href="#">Security</a></li>
           <li><a class="text-decoration-none" href="#">Term</a></li>
           <li><a class="text-decoration-none" href="#">Privacy</a></li>
-          <!-- <li class="ms-3"><a class="text-muted" href="#"><svg class="bi " width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-              -->
+
 
           <li><a class="text-decoration-none" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                 fill="currentColor" class="bi bi-linkedin  rounded-circle" viewBox="0 0 16 16">
@@ -642,173 +743,10 @@
 
 
   </footer>
-  <!-- <div style="height: 500px;"></div> -->
-
-  <!-- 
-    <footer class="content-info site-footer">
-        <div class="container-fluid">
-
-            <div class="row d-flex justify-content-center">
-
-               
-
-                <div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea et voluptatem ad
-                    culpa nam laboriosam ipsum eos quis minima aliquam consequuntur incidunt sint ipsam, voluptates
-                    nesciunt temporibus id iusto reiciendis?</div>
-                <div class="col-md-2">Aut beatae incidunt sapiente delectus eaque labore consectetur laboriosam ratione
-                    minus, fuga error suscipit vel blanditiis odio eum. Necessitatibus excepturi quibusdam molestiae ea
-                    sit totam voluptas eveniet commodi ad quam!</div>
-                <div class="col-md-2">Facilis, dolorum nemo consectetur optio aspernatur magni voluptatum iusto animi?
-                    Dolores fugiat aliquid nesciunt dolorem reiciendis ut quos commodi animi saepe laborum, laboriosam
-                    ab praesentium quis facere? Doloremque, veritatis ipsam!</div>
-                <div class="col-md-2">Animi id nam recusandae sunt rerum consectetur totam magni temporibus maxime non
-                    saepe alias quaerat sed ratione dolores molestiae omnis earum, natus, quis ipsum officia vero esse?
-                    Possimus, explicabo quisquam.</div>
-                <div class="col-md-2">Aspernatur autem doloribus praesentium nemo dolores facere, sit iure! Doloremque,
-                    quam. Nobis sed voluptas impedit repudiandae, corporis sequi quod numquam atque enim voluptatum hic
-                    eos tempore aut. Cum, doloremque nam.</div>
-            </div>
-             <div id="footer-links">
-                <ul id="menu-footer-menu" class="footer-nav">
-                    <li class="dropdown menu-product"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#"
-                            data-ga="category:Footer Links;location:Footer; hierarchy:ul; action:concat;relocate:ul#menu-footer-menu">Product</a>
-                        <ul class="dropdown-menu">
-                            <li class="menu-smart-builder"><a href="https://unbounce.com/product/smart-builder/">Smart
-                                    Builder</a></li>
-                            <li class="menu-preview-smart-builder"><a
-                                    href="https://unbounce.com/smart-builder-preview/">Preview Smart Builder</a></li>
-                            <li class="menu-smart-traffic"><a href="https://unbounce.com/product/smart-traffic/">Smart
-                                    Traffic</a></li>
-                            <li class="menu-smart-copy"><a href="https://unbounce.com/product/smart-copy/">Smart
-                                    Copy</a></li>
-                            <li class="menu-apps-and-integrations"><a target="_blank" rel="noopener"
-                                    href="http://appmarket.unbounce.com/">Apps and Integrations</a></li>
-                            <li class="menu-landing-pages"><a href="https://unbounce.com/product/landing-pages/">Landing
-                                    Pages</a></li>
-                            <li class="menu-popups-and-sticky-bars"><a
-                                    href="https://unbounce.com/product/popups-and-sticky-bars/">Popups and Sticky
-                                    Bars</a></li>
-                            <li class="menu-landing-page-templates active"><a
-                                    href="https://unbounce.com/landing-page-templates/">Landing Page Templates</a></li>
-                            <li class="menu-smart-copy-templates"><a
-                                    href="https://unbounce.com/product/smart-copy/templates/">Smart Copy Templates</a>
-                            </li>
-                            <li class="menu-product-security"><a href="https://unbounce.com/product/security/">Product
-                                    Security</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown menu-solutions"><a class="dropdown-toggle" data-toggle="dropdown"
-                            data-target="#"
-                            data-ga="category:Footer Links;location:Footer; hierarchy:ul; action:concat;relocate:ul#menu-footer-menu">Solutions</a>
-                        <ul class="dropdown-menu">
-                            <li class="menu-ecommerce"><a
-                                    href="https://unbounce.com/solutions/industry/ecommerce/">Ecommerce</a></li>
-                            <li class="menu-saas"><a href="https://unbounce.com/solutions/industry/saas/">SaaS</a></li>
-                            <li class="menu-agency"><a
-                                    href="https://unbounce.com/solutions/industry/agencies/">Agency</a></li>
-                            <li class="menu-small-businesses"><a
-                                    href="https://unbounce.com/solutions/industry/small-businesses/">Small
-                                    Businesses</a></li>
-                            <li class="menu-b2b-marketing"><a href="/solutions/industry/b2b-segment/">B2B Marketing</a>
-                            </li>
-                            <li class="menu-professional-services"><a
-                                    href="https://unbounce.com/solutions/industry/professional-services/">Professional
-                                    Services</a></li>
-                            <li class="menu-ppc"><a href="https://unbounce.com/solutions/use-case/ppc/">PPC</a></li>
-                            <li class="menu-social-ads"><a
-                                    href="https://unbounce.com/solutions/use-case/social-ads/">Social Ads</a></li>
-                            <li class="menu-email-marketing"><a
-                                    href="https://unbounce.com/solutions/use-case/email-marketing/">Email Marketing</a>
-                            </li>
-                            <li class="menu-lead-generation"><a
-                                    href="https://unbounce.com/solutions/use-case/lead-generation/">Lead Generation</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown menu-company"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#"
-                            data-ga="category:Footer Links;location:Footer; hierarchy:ul; action:concat;relocate:ul#menu-footer-menu">Company</a>
-                        <ul class="dropdown-menu">
-                            <li class="menu-about-unbounce"><a href="https://unbounce.com/about/">About Unbounce</a>
-                            </li>
-                            <li class="menu-partner-program"><a href="https://unbounce.com/partner-program/">Partner
-                                    Program</a></li>
-                            <li class="menu-careers"><a href="https://unbounce.com/careers/">Careers</a></li>
-                            <li class="menu-integrate-with-us"><a target="_blank" rel="noopener"
-                                    href="https://developer.unbounce.com/">Integrate with Us</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown menu-learn"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#"
-                            data-ga="category:Footer Links;location:Footer; hierarchy:ul; action:concat;relocate:ul#menu-footer-menu">Learn</a>
-                        <ul class="dropdown-menu">
-                            <li class="menu-what-is-conversion-intelligence"><a
-                                    href="https://unbounce.com/conversion-intelligence/">What is Conversion
-                                    Intelligence?</a></li>
-                            <li class="menu-landing-page-basics"><a
-                                    href="https://unbounce.com/landing-page-articles/what-is-a-landing-page/">Landing
-                                    Page Basics</a></li>
-                            <li class="menu-blog"><a href="https://unbounce.com/blog/">Blog</a></li>
-                            <li class="menu-resource-center"><a href="/resources/">Resource Center</a></li>
-                            <li class="menu-landing-page-examples"><a
-                                    href="https://unbounce.com/landing-page-examples-built-with-unbounce/">Landing Page
-                                    Examples</a></li>
-                            <li class="menu-how-to-build-a-landing-page"><a
-                                    href="https://unbounce.com/how-to-create-a-landing-page/">How to Build a Landing
-                                    Page</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown menu-get-in-touch"><a class="dropdown-toggle" data-toggle="dropdown"
-                            data-target="#"
-                            data-ga="category:Footer Links;location:Footer; hierarchy:ul; action:concat;relocate:ul#menu-footer-menu">Get
-                            in Touch</a>
-                        <ul class="dropdown-menu">
-                            <li class="menu-contact"><a href="https://unbounce.com/contact-us/">Contact</a></li>
-                            <li class="menu-demo"><a href="https://unbounce.com/demo/">Demo</a></li>
-                            <li class="menu-log-in"><a href="https://app.unbounce.com/">Log In</a></li>
-                            <li class="menu-help-center"><a href="https://documentation.unbounce.com/">Help Center</a>
-                            </li>
-                            <li class="menu-community"><a href="https://community.unbounce.com/">Community</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-         <div class="copyright-wrap container">
-            <div id="footer-copyright">© 2010-<span id="currentyear">
-                    <script>document.getElementById('currentyear').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-                    2023
-                </span> Unbounce. All rights reserved.</div>
-            <div id="footer-terms">
-                <ul id="menu-footer-terms" class="nav terms-nav nav-inline">
-                    <li class="menu-security"><a href="https://unbounce.com/security/">Security</a></li>
-                    <li class="menu-privacy-policy"><a href="https://unbounce.com/privacy/">Privacy Policy</a></li>
-                    <li class="menu-terms-of-service"><a href="https://unbounce.com/terms-of-service/">Terms of
-                            Service</a></li>
-                </ul>
-            </div>
-            <div id="footer-social">
-                <ul id="menu-footer-social" class="nav social-nav nav-inline">
-                    <li class="menu-"><a title="Follow us on Twitter" target="_blank" rel="noopener"
-                            href="https://twitter.com/unbounce"><i class="fontello icon-twitter-circle"></i></a></li>
-                    <li class="menu-"><a title="Connect on LinkedIn" target="_blank" rel="noopener"
-                            href="https://linkedin.com/company/unbounce"><i
-                                class="fontello icon-linkedin-circle"></i></a></li>
-                    <li class="menu-"><a title="See amazing reviews on G2 Crowd" target="_blank" rel="noopener"
-                            href="https://www.g2.com/products/unbounce/reviews"><i
-                                class="fontello icon-g2-circle"></i></a></li>
-                    <li class="menu-"><a title="Follow us on Instagram" target="_blank" rel="noopener"
-                            href="https://www.instagram.com/unbounce/"><i
-                                class="fontello icon-instagram-circle"></i></a></li>
-                    <li class="menu-"><a title="Watch us on Youtube" target="_blank" rel="noopener"
-                            href="https://www.youtube.com/user/UnbounceVideos"><i
-                                class="fontello icon-youtube-circle"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer> -->
-
 
 
 </body>
 <script src="asests/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
 
 </html>
